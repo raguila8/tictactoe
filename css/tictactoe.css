@@ -1,0 +1,138 @@
+body {
+  text-align: center;
+	background-color: #332f35;
+}
+#header {
+  font-family: "Chewy",Arial, sans-serif;
+  font-size: 5vw;
+  color: #2C9090;
+	margin: 30px;
+}
+
+#container {
+  width:calc(24vw + 4px);
+  height:calc(24vw + 4px);
+  border: solid 1px black;
+  position:relative;
+  margin:auto;
+  top: -2vw;
+  display:none;
+}
+/*
+#dialog {
+  position:absolute;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+  color: black;
+
+}
+*/
+button {
+  position:relative;
+  width: 130px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #333;
+	letter-spacing: 0.03em;
+  border: 2px solid #FFF;
+  color: white;
+  top:-2vw;
+  
+}
+/*
+#pvp {
+  left: 5%;
+}
+
+#pvc {
+  right:5%;
+}
+*/
+button:hover {
+  opacity:0.75;
+}
+
+
+.square {
+  float: left;
+  /*border-left: solid 1px black;
+  border-top: solid 1px black;*/
+}
+
+img {
+	vertical-align: bottom;
+	width: 75px;
+	height: 75px;
+}
+
+input[type=radio] {
+	position: absolute;
+	visibility: hidden;
+	display: none;
+}
+
+label {
+	font-family: "Chewy",Arial, sans-serif;
+	color: #99959b;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 5px 20px;
+	width: 100%;
+	
+}
+
+input[type=radio]:checked + label {
+	color: #ccc8ce;
+	background: #666268;
+}
+
+label + input[type=radio] + label {
+	border-top: solid 3px #666268;
+}
+
+.radio-group {	
+	border: solid 3px #666268;
+	display: inline-block;
+	bottom-margin: 2px;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 90%;	
+}
+
+#game-table table{
+	border: solid 10px #666268;
+}
+
+#game-table table td {
+	cursor: pointer;
+}
+
+#game-buttons td input {
+	font-family: "Chewy",Arial, sans-serif;
+	color: #99959b;
+	background-color: #332f35;
+	font-weight: bold;
+	padding: 5px 20px;
+	border: solid 3px #666268;
+	cursor: pointer;
+	border-radius: 10px;
+
+}
+
+#game-buttons td input:hover {
+	color: #ccc8ce;
+	background: #666268;
+}
+
+#dialog {
+	display: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+

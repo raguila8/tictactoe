@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tictactoe</title>
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tictactoe.css"/>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+		<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet" type="text/css">
+		<script src="js/jquery-ui.min.js"></script>
+    <script src="js/tictactoe.js"></script>
+  </head>
+  <body>
+    <p id="header">TIC TAC TOE</p>
+		
+			<div align="center">
+				<table noborder cellpadding="2" cellspacing="2">
+					<tbody>
+						<tr>
+							<td id="game-table">
+								<table border="10" cellpadding="0" cellspacing="3">
+									<tbody>
+										<tr>
+											<td id="zero" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+											<td id="one" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+											<td id="two" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+										</tr>
+										<tr>
+											<td id="three" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+											<td id="four" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+											<td id="five" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+										</tr>
+										<tr>
+											<td id="six" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+											<td id="seven" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+											<td id="eight" class="tile"><img src="images/blankSquare.gif" border="0"></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							<td id="game-options">
+								<table noborder cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td>
+												<table noborder cellpadding="2" cellspacing="1" width="100%">
+													<tbody>
+														<tr><td>
+															<form id="x-form"><div class="radio-group">
+																<input type="radio" id="x-player" name="selector" checked><label for="x-player">X Player</label><input type="radio" id="x-computer" name="selector"><label for="x-computer">X Computer</label>
+															</form></div>
+														</tr></td>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<table noborder cellpadding="2" cellspacing="1" width="100%">
+													<tbody>
+														<tr><td>
+															<form id="o-form"><div class="radio-group">
+																<input type="radio" id="o-player" name="selector"><label for="o-player">O Player</label><input type="radio" id="o-computer" name="selector" checked><label for="o-computer">O Computer</label>
+															</form></div>
+														</tr></td>
+													</tbody>
+												</table>
+
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+												<table noborder cellpadding="2" cellspacing="1" width="100%">
+													<tbody>
+														<tr><td>
+															<form id="begins-form"><div class="radio-group">
+																<input type="radio" id="x-begins" name="selector" checked><label for="x-begins">X begins</label><input type="radio" id="o-begins" name="selector"><label for="o-begins">O begins</label>
+															</form></div>
+														</tr></td>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr id="game-buttons">
+							<td align="center">
+								<input id="new-game" type="button" value="NEW GAME" style="width:70%">
+							</td>
+							<td align="center">
+								<input id="help-button" type="button" value="HELP" style="width:70%">
+							</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+		<div id="dialog">
+			<p></p>
+		</div>
+  </body>
+</html>
